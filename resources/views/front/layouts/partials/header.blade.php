@@ -3,7 +3,7 @@
             <nav class="navbar navbar-expand-lg p-0">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo2.png" class="img-fluid" alt="Blog">
+                        <img src="{{ asset('front/assets/images/logo2.png') }}" class="img-fluid" alt="Blog">
                     </a>
                     <div class="d-flex align-items-center d-block d-lg-none">
                         <div class="me-2">
