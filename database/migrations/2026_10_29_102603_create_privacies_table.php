@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('privacies', function (Blueprint $table) {
             $table->id();
-              $table->string('name');
-        $table->longText('description');
-        $table->string('meta_title')->nullable();
-        $table->text('meta_desc')->nullable();
-        $table->text('meta_keywords')->nullable();
+            $table->string('name');
+            $table->longText('description');
+            $table->string('meta_title')->nullable();
+            $table->text('meta_desc')->nullable();
+            $table->text('meta_keywords')->nullable();
             $table->timestamps();
         });
     }

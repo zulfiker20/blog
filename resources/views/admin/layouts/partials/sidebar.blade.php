@@ -23,28 +23,28 @@
                      </a>
                  </li>
                  <li>
-                     <a href="calendar.html" class=" waves-effect">
+                     <a href="{{route('admin.categories.index')}}" class=" waves-effect">
                          <i class="ri-calendar-2-line"></i>
-                         <span>Categorie</span>
+                         <span>Category</span>
                      </a>
                  </li>
                  {{-- contact --}}
                  <li>
-                     <a href="javascript: void(0);" class="waves-effect">
+                     <a href="{{route('admin.contacts.index')}}" class="waves-effect">
                          <i class="ri-phone-line"></i>
                          <span>Contact</span>
                      </a>
                  </li>
                  {{-- privacy --}}
                  <li>
-                     <a href="javascript: void(0);" class="waves-effect">
+                     <a href="{{route('admin.privacy.index')}}" class="waves-effect">
                          <i class="ri-shield-line"></i>
                          <span>Privacy</span>
                      </a>
                  </li>
                  {{-- terms --}}
                  <li>
-                     <a href="javascript: void(0);" class="waves-effect">
+                     <a href="{{route('admin.term.index')}}" class="waves-effect">
                          <i class="ri-file-text-line"></i>
                          <span>Terms & Conditions</span>
                      </a>
@@ -56,14 +56,14 @@
                          <span>Subscribe</span>
                      </a>
                  </li>
-
-                 <li>
+                 {{-- roles & permissions --}}
+                  <li>
                      <a href="javascript: void(0);" class="has-arrow waves-effect">
-                         <i class="ri-mail-send-line"></i>
-                         <span>Email</span>
+                         <i class="ri-lock-line"></i>
+                         <span>Roles & Permissions</span>
                      </a>
                      <ul class="sub-menu" aria-expanded="false">
-                         <li><a href="email-inbox.html">Inbox</a></li>
+                         <li><a href="{{ route('admin.user') }}">Users</a></li>
                          <li><a href="email-read.html">Read Email</a></li>
                      </ul>
                  </li>
