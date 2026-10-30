@@ -17,7 +17,7 @@
                  </li>
 
                  <li>
-                     <a href="calendar.html" class=" waves-effect">
+                     <a href="{{route('admin.post.index')}}" class=" waves-effect">
                          <i class="ri-calendar-2-line"></i>
                          <span>Blog</span>
                      </a>

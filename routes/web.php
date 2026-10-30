@@ -13,6 +13,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\AdminPrivacyController;
 use App\Http\Controllers\Admin\AdminTermController;
 use App\Http\Controllers\Admin\AdminContactController;
+use App\Http\Controllers\Admin\AdminPostController;
 use Illuminate\Support\Facades\Route;
 
 // Front Pages Routes
@@ -60,6 +61,13 @@ Route::delete('/terms/delete/{id}', [AdminTermController::class, 'destroy'])->na
 
 Route::get('admin/contacts', [AdminContactController::class, 'index'])->name('admin.contacts.index');
 Route::delete('admin/contacts/delete/{id}', [AdminContactController::class, 'destroy'])->name('admin.contacts.delete');
+
+Route::get('admin/posts', [AdminPostController::class, 'index'])->name('admin.post.index');
+Route::get('admin/posts/create', [AdminPostController::class, 'create'])->name('admin.post.create');
+Route::post('admin/posts/store', [AdminPostController::class, 'store'])->name('admin.post.store');
+Route::get('admin/posts/edit/{id}', [AdminPostController::class, 'edit'])->name('admin.post.edit');
+Route::post('admin/posts/update/{id}', [AdminPostController::class, 'update'])->name('admin.post.update');
+Route::delete('admin/posts/delete/{id}', [AdminPostController::class, 'destroy'])->name('admin.post.delete');
 
 
 Route::middleware('auth')->group(function () {
